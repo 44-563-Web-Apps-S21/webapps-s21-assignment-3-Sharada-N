@@ -39,5 +39,29 @@
                 <td>$200</td>
             </tr>
         </table>
+        <hr>
+        <h3>Language h</h3>
+        <blockquote cite="https://en.wikipedia.org/wiki/Language_H">
+            Language H is a proprietary, procedural programming language created by NCR based on COBOL. 
+            The first compiler was developed in August 1962 to run on the National-Elliott 405M and 
+            produce object code for the National-Elliott 803B. It is believed that the "H" stands 
+            for John C Harwell.
+        </blockquote>
+        <a href="https://en.wikipedia.org/wiki/Language_H">https://en.wikipedia.org/wiki/Language_H</a>
+        <pre>
+            (module
+                (import "h" "h" (func $h (param i32)))
+                (func $h_main
+                    (local i32 i32 i32)
+                    (local.set 0 (i32.const 10))
+                    (local.set 1 (i32.const 104))
+                    (local.set 2 (i32.const 39))
+                    (call $h (get_local 1))
+                    (call $h (get_local 0))
+                )
+                (export "h" (func $h_main))
+                )
+        </pre>
+        <a href="https://christine.website/blog/h-language-2019-06-30">https://christine.website/blog/h-language-2019-06-30</a>
     </body>
 </html>
